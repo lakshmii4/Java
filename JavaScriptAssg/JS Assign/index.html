@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ASSIGNMENT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="customerForm">
+            <label>Name:</label>
+            <input type="text" name="Name" id="nameInput" placeholder="Enter name"><br><br>
+            <label>Email Id:</label>
+            <input type="text" name="Email Id" id="emailInput" placeholder="Enter email"><br><br>
+            <label for="phone">Enter phone number:</label>
+            <input type="tel" id="phoneInput" name="Phone:" placeholder="Enter Contact no." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <label for="account_type">Account Type:</label>
+            <select name="account_type" id="accountTypeInput">
+                <option value="disabled select">Add account type</option>
+                <option value="savings">Savings</option>
+                <option value="current">Current</option>
+            </select><br><br>
+            <button type="button" id="addCustomerBtn">Add Customer</button>
+        </form>
+        <table id="customerTable" border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email ID</th>
+                <th>Contact No.</th>
+                <th>Account Type</th>
+              </tr>
+            </thead>
+            <tbody id="customerTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
